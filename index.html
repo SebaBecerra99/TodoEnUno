@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Unificador de Herramientas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab-button" onclick="openTab('porMedida')">Neumáticos MarketPlace</button>
+    <button class="tab-button" onclick="openTab('webprecios')">Neumáticos Web</button>
+    <button class="tab-button" onclick="openTab('porAro')">Buscador de Llantas</button>
+    <button class="tab-button" onclick="openTab('comparador')">Comparador de Neumáticos</button>
+    <button class="tab-button" onclick="openTab('largoAnchoAlto')">Largo x Ancho x Alto</button>
+    <button class="tab-button" onclick="openTab('apernaduras')">Apernaduras</button>
+
+  </div>
+
+  <div id="porMedida" class="tab-content">
+    <iframe src="buscadorPorMedida/index.html" frameborder="0"></iframe>
+  </div>
+  <div id="webprecios" class="tab-content">
+    <iframe src="Webprecios/index.html"></iframe>
+  </div>
+  <div id="porAro" class="tab-content" style="display:none">
+    <iframe src="buscadorPorAro/index.html" frameborder="0"></iframe>
+  </div>
+  <div id="comparador" class="tab-content" style="display:none">
+    <iframe src="comparadorNeumaticos/index.html" frameborder="0"></iframe>
+  </div>
+  <div id="largoAnchoAlto" class="tab-content">
+    <iframe src="LargoAnchoAlto/index.html"></iframe>
+  </div>
+    <div id="apernaduras" class="tab-content">
+    <iframe src="Apernaduras/index.html"></iframe>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
