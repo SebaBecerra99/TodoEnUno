@@ -9,5 +9,5 @@ function openTab(tabId) {
   
   // Esto asegura que se muestre por defecto si no usas inline style en el div
   window.onload = () => {
-    openTab('porMedida');
+    openTab('webprecios');
   };

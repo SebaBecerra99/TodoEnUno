@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(#333333, black);
-    color: #fff;
+    background: #414141;
+    color: #fff8dc; /* Amarillo claro */
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
@@ -13,37 +13,37 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('files/Fondo.jpg') !important;
+    background-image: url('files/Fondo.jpeg') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    opacity: 0.2;
+    opacity: 0.08;
     z-index: -1;
 }
 
 .container {
     padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(#333333, black);
+    border-radius: 10px;
+    background: #414141;
+    box-shadow: 0 0 20px rgba(255, 223, 0, 0.15);
 }
 
 input {
     margin: 5px;
     padding: 5px;
-    background-color: #333333;
+    background-color: #0f0f0f;
     color: #fff;
-    border: 1px solid #ff0000;
+    border: 1px solid #d1a100;
 }
 
 input::placeholder {
-    color: #747474;
+    color: #d1a100;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #ff0000;
-    color: white;
+    background-color: #d1a100;
+    color: #000;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -51,62 +51,62 @@ button {
 }
 
 button:hover {
-    background-color: #cc0000;
+    background-color: #d1a100;
+    color: #000;
 }
 
 h2 {
-    color: #ff0000;
+    color: #ffeb3b;
     font-size: 2rem;
+    text-shadow: 1px 1px 2px black;
 }
 
 h4 {
-    color: #ff0000;
+    color: #ffeb3b;
     font-size: 1.2rem;
+    text-shadow: 1px 1px 1px black;
 }
 
-/* Estilo base */
+/* Logo ajustado */
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px; /* Margen superior ajustado */
+    margin-top: 20px;
 }
 
 .logo {
     position: relative;
     z-index: 1;
-    background-color: rgba(110, 110, 110, 0.5);
-    padding: 5px;
+    background-color: rgba(255, 235, 59, 0.1); /* Amarillo translúcido */
+    padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    max-width: 200px; /* Tamaño base */
+    box-shadow: 0 0 15px rgba(255, 223, 0, 0.4);
+    max-width: 200px;
     height: auto;
 }
 
 /* Optimización para móviles */
 @media (max-width: 768px) {
     .logo-container {
-        margin-top: 10px; /* Menor margen en pantallas pequeñas */
+        margin-top: 10px;
     }
 
     .logo {
-        max-width: 120px; /* Reducir el tamaño del logo */
-        padding: 3px; /* Menos espacio alrededor */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Menos sombra */
+        max-width: 120px;
+        padding: 6px;
+        box-shadow: 0 0 10px rgba(255, 223, 0, 0.3);
     }
 }
 
-/* Optimización para pantallas muy pequeñas */
 @media (max-width: 480px) {
     .logo-container {
-        margin-top: 5px; /* Aún menos margen */
+        margin-top: 5px;
     }
 
     .logo {
-        max-width: 100px; /* Aún más pequeño el logo */
-        padding: 2px; /* Muy poco espacio */
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Muy sutil la sombra */
+        max-width: 100px;
+        padding: 4px;
+        box-shadow: 0 0 6px rgba(255, 223, 0, 0.2);
     }
 }
-
-
