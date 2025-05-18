@@ -7,18 +7,35 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="tabs">
-    <button class="tab-button" onclick="openTab('webprecios')">Neumáticos Web</button>    
-    <button class="tab-button" onclick="openTab('comparador')">Comparador de Neumáticos</button>
-    <button class="tab-button" onclick="openTab('ubicaciones')">Ubicación de Neumáticos</button>
-  </div>
+  <!-- Menú Hamburguesa -->
+  <header class="navbar">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <div class="menu" id="menu">
+      <button onclick="openTab('webprecios')">Neumáticos</button>
+      <button onclick="openTab('comparador')">Comparador de Neumáticos</button>
+      <button onclick="openTab('ubicaciones')">Ubicación de Neumáticos</button>
+    </div>
+  </header>
 
+  <!-- Contenido de pestañas -->
   <div class="wrapper">
+    <div id="porMedida" class="tab-content">
+      <iframe src="porMedida/index.html"></iframe>
+    </div>
     <div id="webprecios" class="tab-content active">
       <iframe src="Webprecios/index.html"></iframe>
     </div>
+    <div id="porAro" class="tab-content">
+      <iframe src="porAro/index.html"></iframe>
+    </div>
     <div id="comparador" class="tab-content">
       <iframe src="comparadorNeumaticos/index.html"></iframe>
+    </div>
+    <div id="largoAnchoAlto" class="tab-content">
+      <iframe src="largoAnchoAlto/index.html"></iframe>
+    </div>
+    <div id="apernaduras" class="tab-content">
+      <iframe src="apernaduras/index.html"></iframe>
     </div>
     <div id="ubicaciones" class="tab-content">
       <iframe src="Ubicaciones/index.html"></iframe>
